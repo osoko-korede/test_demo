@@ -196,7 +196,7 @@ function Activities() {
           </div>
         </li>
         <li>
-          <div className='activities-container'>
+          <div className='activities-container2'>
               <h5>Freelancer Enterprise.</h5> 
               <h2>Company budget? Get <br /> more done for less</h2>
               <p>Use our workforce of 50 million to help your <br /> business achieve more.</p>

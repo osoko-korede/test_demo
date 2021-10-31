@@ -14,19 +14,25 @@ const LazySignUp = React.lazy(() => import('./components/pages/SignUp'));
 
 function App() {
   return (
-      <>
-        <Router>
-          <React.Suspense fallback='I am lazy loading....'>
-            <Navbar />
-            <Switch>
-              <Route path='/' exact component={LazyHome}/>
-              <Route path='/services' component={LazyServices} />
-              <Route path='/products' component={LazyProducts} />
-              <Route path='/sign-up' component={LazySignUp} />
-            </Switch>
-          </React.Suspense>
-        </Router>
-      </>
+      <div >
+        <div className='unloadh'>
+          <h1 className='heading'>This page is not responsive. <br /> View in large screen to access content.</h1>
+          <div className='loader'></div>
+        </div>
+        <div className='unload'>
+          <Router>
+            <React.Suspense fallback='I am lazy loading...'>
+              <Navbar />
+              <Switch>
+                <Route path='/' exact component={LazyHome}/>
+                <Route path='/services' component={LazyServices} />
+                <Route path='/products' component={LazyProducts} />
+                <Route path='/sign-up' component={LazySignUp} />
+              </Switch>
+            </React.Suspense>
+          </Router>
+        </div>
+      </div>
   );
 }
 

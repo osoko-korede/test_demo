@@ -30,7 +30,7 @@ function Navbar() {
         <div className='navbar-container'>
           <div className="special-header">
             <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-              <img src="/images/logo.png" className="logo" />
+              <img src="/images/logo.png" alt='' className="logo" />
             </Link>
             <ul className="special">
               <li className='nav-item'>

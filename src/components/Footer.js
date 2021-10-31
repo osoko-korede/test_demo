@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Button } from './Button';
 import './Footer.css';
 
 function Footer() {
@@ -9,7 +8,7 @@ function Footer() {
       <div class='footer-links'>
         <div className='footer-link-wrapper'>
           <div class='footer-link-items'>
-            <img src="/images/logo.png" className='footimg' />
+            <img src="/images/logo.png" alt='' className='footimg' />
             <Link to='/'>US(International) / English</Link>
             <Link to='/'>Help & Support</Link>
           </div>
